@@ -12,7 +12,7 @@ public class BasicAuth {
 		driver.manage().window().maximize();
 		driver.get("https://admin:admin@the-internet.herokuapp.com/");
 		
-		WebElement basicAuthEle = driver.findElement(By.xpath("//a[text()=\"Basic Auth\"]"));
+		WebElement basicAuthEle = driver.findElement(By.xpath("//a[text()='Basic Auth']"));
 		basicAuthEle.click();
 		
 		}
