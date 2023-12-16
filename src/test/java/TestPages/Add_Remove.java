@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TP_01_AddRemove {
+public class Add_Remove {
 	
 	public static void main (String[]args) {
 		
