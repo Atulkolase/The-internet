@@ -11,14 +11,17 @@ public class MulptipleWindow {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/windows");
 		
+	
 		WebElement element = driver.findElement(By.xpath("//a[normalize-space()='Click Here']"));
 		element.click();
-		
+		 
+		String mainwindowHandle = driver.getWindowHandle();
 		for (String windowHandle : driver.getWindowHandles()) {
 			driver.switchTo().window(windowHandle);
 		}
 		
-		driver.close();
+		driver.switchTo().window(mainwindowHandle);
+		//driver.close();
 		
 
 	}
